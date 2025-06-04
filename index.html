@@ -8,22 +8,22 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="Логотип" width="100" height="100" />
-        <a>Fluentastic english&nbsp;</a> <a>"Become fluent, feel fantastic"</a><nav>
-        <p><a href="/">Дом</a><a> </a><a href="/">Цены</a><a> </a><a href="/">Вход</a><a> </a><a href="/">Регистрация</a></p>
+    <header class="header_container">
+        <img class="logo_image" src="images/logo.jpg" alt="Логотип" width="100" height="100" />
+        <a class="main_slogan">Fluentastic english&nbsp;</a> <a>"Become fluent, feel fantastic"</a><nav>
+        <p><a class="navigation" href="/">Дом</a><a> </a><a class="navigation" href="/">Цены</a><a> </a><a class="navigation" href="/">Вход</a><a> </a><a class="navigation" href="/">Регистрация</a></p>
 </nav></header>
     <main>
         <section>
             <div>
                 <img src="images/learning.jpeg" alt="Логотип" width="300" height="200" />
-                <h2>Возможности сайта</h2>
+                <h2 class="section_header">Возможности сайта</h2>
                 <article>Интерактивная платформа для изучения английского языка, созданная для людей всех возрастов и уровней подготовки. Главная цель — сделать процесс обучения увлекательным и эффективным</article>
             </div>
         </section>
 
         <section>
-                <h2>Определите свой уровень языка</h2>
+                <h2 class="section_header">Определите свой уровень языка</h2>
                 <p><a href="/">Пройти тест</a></p>
                 <img src="images/testing.jpg" alt="Логотип" width="300" height="200" />
         </section>
@@ -34,28 +34,28 @@
     </footer>
     <div>
         <section>
-            <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
-            <h2>Вход</h2>
+            <button class="enter_button" type="button"><img class="button_image" src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+            <h2 class="button_class">Вход</h2>
             <p>Проходить курсы могут только зарегистрированные пользователи.</p>
             <div>
                 <button type="button">Вход</button>
             </div>
         </section>
         <section>
-            <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
-            <h2>Регистрация</h2>
+            <button class="enter_button" type="button"><img class="button_image" src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+            <h2 class="button_class">Регистрация</h2>
             <form action="/" method="post">
-                <input type="text" name="name" placeholder="Имя" required>
-                <input type="email" name="email" placeholder="Логин" required>
+                <input class="inputs" type="text" name="name" placeholder="Имя" required>
+                <input class="inputs" type="email" name="email" placeholder="Логин" required>
                 <fieldset>
                     <div>
-                        <input type="password" name="password" placeholder="Пароль" required>
+                        <input class="inputs" type="password" name="password" placeholder="Пароль" required>
                         <span>Минимум 8 символов</span>
                     </div>
-                    <input type="password" name="repeat-password" placeholder="Повторите пароль" required>
+                    <input class="inputs" type="password" name="repeat-password" placeholder="Повторите пароль" required>
                 </fieldset>
                 <fieldset>
-                    <input type="submit" value="Зарегистрироваться">
+                    <input class="inputs" type="submit" value="Зарегистрироваться">
                     <button type="button">Отмена</button>
                 </fieldset>
                 <button type="button">У меня уже есть аккаунт</button>
