@@ -1,0 +1,253 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Fallback background for area outside the component */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Utility class for screen reader only content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* CSS for section section:login-area */
+.login-area {
+    position: relative;
+    width: 100%;
+    max-width: 1440px; /* Figma design width */
+    height: 441px; /* Figma design height */
+    margin: 0 auto; /* Center the component */
+    background-color: #ffffff; /* style_1 */
+    overflow: hidden; /* style_1 */
+}
+
+.login-area__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* style_2 background-size: cover */
+    z-index: 1;
+}
+
+.login-area__nav {
+    position: absolute;
+    top: 17px;
+    right: 34px; /* 1440 (parent) - 1371 (x) - 35 (width) */
+    z-index: 2;
+}
+
+.login-area__nav-link {
+    color: #fdfdfd; /* style_4 */
+    font-family: 'Raleway', sans-serif; /* style_4 */
+    font-weight: 700; /* style_4 */
+    font-size: 16px; /* style_4 */
+    line-height: 16px; /* style_4 */
+    text-decoration: none;
+}
+
+.login-area__form-wrapper {
+    position: absolute;
+    top: 68px;
+    left: 66px;
+    width: 350px; /* Width of Group 2 (135:18645) */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form__title {
+    color: #ff0050; /* style_16 */
+    font-family: 'Raleway', sans-serif; /* style_16 */
+    font-weight: 700; /* style_16 */
+    font-size: 24px; /* style_16 */
+    line-height: 24px; /* style_16 */
+    margin: 0 0 12px 0; /* Spacing: 114 (next el y) - (68 (this y) + 34 (this h)) = 12px */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form__group {
+    display: flex; /* style_12 */
+    flex-direction: column; /* style_12 */
+    gap: 4px; /* style_12 */
+    margin-bottom: 12px; /* Default, will be overridden for last input group */
+}
+
+.login-form__group:nth-of-type(2) { /* Password input group */
+    margin-bottom: 20px; /* Spacing: 236 (button y) - (171 (this y) + 45 (this h)) = 20px */
+}
+
+
+.login-form__label {
+    color: #ffffff; /* style_13 */
+    font-family: 'Raleway', sans-serif; /* style_13 */
+    font-weight: 800; /* style_13 */
+    font-size: 9px; /* style_13 */
+    line-height: 10.57px; /* style_13 */
+    letter-spacing: 1.8px; /* style_13 */
+}
+
+.login-form__input {
+    width: 200px; /* From Textbox Frame 135:18605;4:13 */
+    height: 30px; /* From Textbox Frame 135:18605;4:13 */
+    background-color: #ffffff; /* style_14 */
+    border: 1px solid #dbdbdb; /* style_14 */
+    border-radius: 4px; /* style_14 */
+    padding: 8px; /* style_14 */
+    font-family: 'Roboto', sans-serif; /* style_15 for placeholder, good for input too */
+    font-size: 12px; /* style_15 for placeholder */
+    color: #333333; /* Actual input text color, assuming not #dbdbdb */
+    box-sizing: border-box;
+}
+
+.login-form__input::placeholder {
+    color: #dbdbdb; /* style_15 */
+    font-family: 'Roboto', sans-serif; /* style_15 */
+    font-weight: 400; /* style_15 */
+    font-size: 12px; /* style_15 */
+    line-height: 14.0625px; /* style_15, approx 1 for input field context */
+    opacity: 1; /* Ensure placeholder is visible */
+}
+
+.login-form__submit-button {
+    background-color: #ff0050; /* style_7 */
+    display: flex; /* style_7 */
+    flex-direction: row; /* style_7 */
+    justify-content: center; /* style_7 */
+    align-items: center; /* style_7 */
+    padding: 12.14px 24.29px; /* style_7 */
+    border-radius: 4.86px; /* style_7, approx from 4.8577... */
+    border: none;
+    cursor: pointer;
+    width: 143.3px; /* From Base Button I135:18603;1812:4527 */
+    height: 58.29px; /* From Base Button I135:18603;1812:4527 */
+    box-shadow: -1.9px 2.53px 1.27px 0px rgba(0, 0, 0, 0.22), 0px 0px 15.2px 0px #ff0050; /* style_6 */
+    margin-bottom: 25.71px; /* Spacing: 320 (forgot_pw y) - (236 (this y) + 58.29 (this h)) = 25.71px */
+    gap: 9.72px; /* Calculated: 160.7199 (icon x) - (100.0043 (text x) + 51 (text w)) = 9.7156 */
+    overflow: hidden; /* style_7 */
+}
+
+.login-form__submit-text {
+    color: #ffffff; /* style_9 */
+    font-family: 'Inter', sans-serif; /* style_9 */
+    font-weight: 700; /* style_9 */
+    font-size: 16px; /* style_9 */
+    line-height: 28px; /* style_9 */
+}
+
+.login-form__submit-icon {
+    width: 24.29px; /* From SVG node I135:18603;1812:4527;1812:4295 */
+    height: 24.29px; /* From SVG node I135:18603;1812:4527;1812:4295 */
+    display: block; /* Remove extra space below image */
+}
+
+.login-area__forgot-password {
+    width: 192px; /* From Group 1 (135:18644) */
+    height: 43px; /* From Group 1 (135:18644) */
+    background-color: #840029; /* style_18 */
+    border-radius: 10px; /* style_18 & style_17 */
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25); /* style_18 */
+    color: #ca003f; /* style_19 */
+    font-family: 'Raleway', sans-serif; /* style_19 */
+    font-weight: 700; /* style_19 */
+    font-size: 19.43px; /* style_19 */
+    line-height: 1; /* Adjusted for button content centering */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* style_19 text-align: left, but visually centered in button */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-area {
+        height: auto; /* Allow height to adjust */
+        min-height: 441px; /* Maintain minimum height */
+        padding-bottom: 30px; /* Add padding for content */
+    }
+
+    .login-area__form-wrapper {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 350px;
+        top: 50px;
+    }
+
+    .login-form__input {
+        width: 100%;
+    }
+
+    .login-form__submit-button,
+    .login-area__forgot-password {
+        width: 100%; /* Make buttons take more available space */
+        max-width: 250px; /* Optional: prevent them from becoming too wide */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login-area__nav {
+        right: 20px;
+        top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-area__form-wrapper {
+        top: 30px;
+        width: calc(100% - 30px); /* Full width with some padding */
+        left: 15px;
+        transform: none;
+        padding: 0;
+    }
+
+    .login-form__title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .login-form__label {
+        font-size: 8px;
+    }
+
+    .login-form__input::placeholder {
+        font-size: 11px;
+    }
+
+    .login-form__submit-button,
+    .login-area__forgot-password {
+        font-size: 16px; /* Adjust text size in buttons */
+        max-width: none; /* Allow full width */
+    }
+
+    .login-form__submit-text {
+        font-size: 14px;
+    }
+
+    .login-area__nav-link {
+        font-size: 14px;
+    }
+
+    .login-area {
+        min-height: 100vh; /* Try to fill screen height on mobile */
+    }
+}

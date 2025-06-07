@@ -1,67 +1,127 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Учебные курсы" content="width=header, initial-scale=1.0">
-    <title>Учебные курсы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluentastic english</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>Fluentastic English</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="global.js" defer></script>
 </head>
-
 <body>
-    <header class="header_container">
-        <img class="logo_image" src="images/logo.jpg" alt="Логотип" width="100" height="100" />
-        <a class="main_slogan">Fluentastic english&nbsp;</a> <a>"Become fluent, feel fantastic"</a><nav>
-        <p><a class="navigation" href="/">Дом</a><a> </a><a class="navigation" href="/">Цены</a><a> </a><a class="navigation" href="/">Вход</a><a> </a><a class="navigation" href="/">Регистрация</a></p>
-</nav></header>
-    <main>
-        <section>
-            <div>
-                <img src="images/learning.jpeg" alt="Логотип" width="300" height="200" />
-                <h2 class="section_header">Возможности сайта</h2>
-                <article>Интерактивная платформа для изучения английского языка, созданная для людей всех возрастов и уровней подготовки. Главная цель — сделать процесс обучения увлекательным и эффективным</article>
-            </div>
-        </section>
-
-        <section>
-                <h2 class="section_header">Определите свой уровень языка</h2>
-                <p><a href="/">Пройти тест</a></p>
-                <img src="images/testing.jpg" alt="Логотип" width="300" height="200" />
-        </section>
-    </main>
-    <footer>
-        <a>Fluentastic english</a>
-        <p>&copy; Fluentastic english 2025</p>
-    </footer>
-    <div>
-        <section>
-            <button class="enter_button" type="button"><img class="button_image" src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
-            <h2 class="button_class">Вход</h2>
-            <p>Проходить курсы могут только зарегистрированные пользователи.</p>
-            <div>
-                <button type="button">Вход</button>
-            </div>
-        </section>
-        <section>
-            <button class="enter_button" type="button"><img class="button_image" src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
-            <h2 class="button_class">Регистрация</h2>
-            <form action="/" method="post">
-                <input class="inputs" type="text" name="name" placeholder="Имя" required>
-                <input class="inputs" type="email" name="email" placeholder="Логин" required>
-                <fieldset>
-                    <div>
-                        <input class="inputs" type="password" name="password" placeholder="Пароль" required>
-                        <span>Минимум 8 символов</span>
-                    </div>
-                    <input class="inputs" type="password" name="repeat-password" placeholder="Повторите пароль" required>
-                </fieldset>
-                <fieldset>
-                    <input class="inputs" type="submit" value="Зарегистрироваться">
-                    <button type="button">Отмена</button>
-                </fieldset>
-                <button type="button">У меня уже есть аккаунт</button>
-            </form>
-        </section>
+<section id="section-header" class="header-section">
+    <div class="container header-container">
+        <nav class="header-nav">
+            <a href="#section-hero-banner" class="nav-link">Дом</a>
+            <a href="#section-courses" class="nav-link">Цены</a>
+            <a href="enter.html" class="nav-link">Вход</a>
+            <a href="reg.html" class="nav-link">Регистрация</a>
+        </nav>
     </div>
-</body>
+</section>
+<section id="section-hero-banner" class="hero-banner-section">
+    <div class="container hero-banner-container">
+        <div class="logo-slogan-group">
+            <img src="images/logo.png" alt="Fluentastic English Logo"
+                 class="hero-logo-img">
+            <div class="hero-text-block">
+                <h1 class="hero-brand-name">Fluentastic<br>english</h1>
+                <p class="hero-slogan">&nbsp;&quot;Become fluent, feel fantastic&quot;</p>
+            </div>
+        </div>
 
+        <div class="opportunities-group">
+            <img src="images/learning.png" alt="Learning illustration"
+                 class="opportunities-img">
+            <div class="opportunities-text-content">
+                <h2 class="opportunities-title">Возможности сайта</h2>
+                <p class="opportunities-description">Интерактивная платформа<br>для изучения английского языка,<br>созданная
+                    для людей всех возрастов<br>и уровней подготовки.<br><br>Главная цель — сделать процесс обучения
+                    увлекательным<br>и эффективным</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="section-level-test" class="level-test-section">
+    <div class="container level-test-container">
+        <div class="level-test-content">
+            <h2 class="level-test-title">Определите свой уровень языка</h2>
+            <a href="#get-tested" class="level-test-button-link">
+                <img src="images/get_tested.png" alt="Get Tested"
+                     class="level-test-button-img">
+            </a>
+        </div>
+        <img src="images/testing.png" alt="Students testing"
+             class="level-test-main-img">
+    </div>
+</section>
+<section id="section-courses" class="courses-section">
+    <div class="container courses-container">
+        <div class="course-card">
+            <a href="courses.html"><h3 class="course-title course-title-everyday">English for Everyday Life</h3></a>
+            <p class="course-description">Этот курс предназначен для начинающих и тех, кто хочет улучшить свои
+                разговорные навыки. Участники изучат полезные фразы и выражения, необходимые для повседневного общения:
+                в магазине, на работе, в ресторане и во время путешествий. Курс включает ролевые игры и практические
+                задания, чтобы студенты могли уверенно использовать язык в реальных ситуациях.</p>
+        </div>
+        <div class="course-card">
+            <a href="courses.html"><h3 class="course-title course-title-business">Business English Mastery</h3></a>
+            <p class="course-description">Этот курс ориентирован на профессионалов, желающих улучшить свои навыки
+                общения в бизнес-среде. Участники освоят специализированную лексику, научатся составлять деловые письма,
+                проводить презентации и вести переговоры на английском языке. Курс включает анализ кейсов и ролевые
+                игры, что позволяет отрабатывать навыки в реальных сценариях.</p>
+        </div>
+        <div class="course-card">
+            <a href="courses.html"><h3 class="course-title course-title-creative">Creative Writing in English</h3></a>
+            <p class="course-description">Курс предназначен для тех, кто хочет развить свои навыки письма на английском
+                языке. Участники изучат различные жанры и стили написания, такие как рассказы, поэзия и эссе. Курс
+                включает упражнения на развитие креативности, анализ произведений известных авторов и обратную связь от
+                преподавателя. Это идеальный выбор для тех, кто хочет выразить свои мысли и идеи на английском
+                языке.</p>
+        </div>
+    </div>
+</section>
+<section id="section-footer" class="footer-section">
+    <div class="container footer-container">
+        <hr class="footer-divider footer-divider-top">
+
+        <div class="footer-main-content">
+            <div class="footer-logo-area">
+                <img src="images/logo.png" alt="Fluentastic English Logo"
+                     class="footer-logo-img">
+                <p class="footer-brand-name">Fluentastic english</p>
+            </div>
+
+            <div class="footer-contacts-area">
+                <h4 class="footer-column-title">Контакты</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#contact-us">Связаться с нами</a></li>
+                    <li><a href="#consultation">Консультация</a></li>
+                    <li><a href="#requisites">Реквизиты</a></li>
+                    <li><a href="#support">Поддержка</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-email-area">
+                <h4 class="footer-column-title">Возникли вопросы?</h4>
+                <p class="footer-email-text">
+                    Напишите нам на почту<br>
+                    <a href="mailto:example@example.com">example@example.com</a>
+                </p>
+            </div>
+        </div>
+
+        <hr class="footer-divider footer-divider-bottom">
+
+        <div class="footer-legal-links">
+            <p class="copyright-text">© Fluentastic english 2025. Все права защищены</p>
+            <a href="#privacy-policy" class="legal-link">Политика обработки персональных данных</a>
+            <a href="#public-offer" class="legal-link">Публичная оферта</a>
+        </div>
+    </div>
+</section>
+</body>
 </html>
