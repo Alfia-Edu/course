@@ -1,22 +1,22 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif; /* Default font */
-  background-color: #f0f0f0; /* Neutral background for areas outside the main content */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* CSS for section section:registration-hero */
+
 .registration-container {
-  max-width: 1440px; /* As per Figma node 131:104 width */
-  height: 441px; /* As per Figma node 131:104 height */
+  max-width: 1440px;
+  height: 441px;
   margin: 0 auto;
   position: relative;
-  background-color: #ffffff; /* style_1 */
-  overflow: hidden; /* style_1 */
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
 .background-image {
@@ -25,181 +25,175 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Simulates background-size: cover from style_2 */
+  object-fit: cover;
   z-index: 0;
 }
 
 .page-header-nav {
   position: absolute;
-  top: 17px; /* (9 - (-8))px */
-  right: 34px; /* 1440 - ( (1052 - (-319)) + 35 ) = 34px */
+  top: 17px;
+  right: 34px;
   z-index: 1;
 }
 
 .home-link {
-  font-family: 'Raleway', sans-serif; /* style_16 */
-  font-weight: 700; /* style_16 */
-  font-size: 16px; /* style_16 */
-  line-height: 16px; /* style_16 */
-  color: #fdfdfd; /* style_16 */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fdfdfd;
   text-decoration: none;
-  text-align: left; /* style_16 */
+  text-align: left;
 }
 
 .form-area {
   position: absolute;
-  top: 68px; /* (60 - (-8))px */
-  left: 66px; /* (-253 - (-319))px */
+  top: 68px;
+  left: 66px;
   display: flex;
   flex-direction: column;
   z-index: 1;
 }
 
 .form-title {
-  font-family: 'Raleway', sans-serif; /* style_14 */
-  font-weight: 700; /* style_14 */
-  font-size: 24px; /* style_14 */
-  line-height: 24px; /* style_14 */
-  color: #ff0050; /* style_14 */
-  text-align: left; /* style_14 */
-  margin: 0; /* Reset default h2 margin */
-  width: 350px; /* From node 132:18588 */
-  height: 34px; /* From node 132:18588 */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff0050;
+  text-align: left;
+  margin: 0;
+  width: 350px;
+  height: 34px;
 }
 
 .registration-form-fields {
   display: flex;
   flex-direction: column;
-  margin-top: 12px; /* 114 (login_y) - (68 (title_y) + 34 (title_h)) = 12px */
+  margin-top: 12px;
 }
 
 .input-group {
-  display: flex; /* style_10 */
-  flex-direction: column; /* style_10 */
-  gap: 4px; /* style_10 */
-  margin-bottom: 12px; /* Calculated: (e.g. 171 - (114+45) = 12) */
-  width: 200px; /* From input instance nodes */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+  width: 200px;
 }
-.input-group:last-of-type { /* Margin for last input group before button */
-  margin-bottom: 23px; /* Calculated: 296 - (228+45) = 23px */
+.input-group:last-of-type {
+  margin-bottom: 23px;
 }
 
 
 .input-label {
-  font-family: 'Raleway', sans-serif; /* style_11 */
-  font-weight: 800; /* style_11 */
-  font-size: 9px; /* style_11 */
-  line-height: 10.57px; /* style_11, rounded */
-  letter-spacing: 1.8px; /* style_11 */
-  color: #ffffff; /* style_11 */
-  text-align: left; /* style_11 */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 9px;
+  line-height: 10.57px;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+  text-align: left;
 }
 
 .text-input-field {
-  background-color: #ffffff; /* style_12 */
-  border: 1px solid #dbdbdb; /* style_12 */
-  padding: 8px; /* style_12 */
-  border-radius: 4px; /* style_12 */
-  font-family: 'Roboto', sans-serif; /* For input text, derived from placeholder style_13 */
-  font-size: 12px; /* style_13 */
-  line-height: 14.06px; /* style_13 */
-  color: #333333; /* Default text color, placeholder styled separately */
-  width: 100%; /* Take full width of parent .input-group */
-  height: 30px; /* From Textbox FRAME I131:195;4:13 height */
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #333333;
+  width: 100%;
+  height: 30px;
 }
 
 .text-input-field::placeholder {
-  color: #dbdbdb; /* style_13 */
-  font-family: 'Roboto', sans-serif; /* style_13 */
-  font-weight: 400; /* style_13 */
-  font-size: 12px; /* style_13 */
-  line-height: 14.06px; /* style_13 */
-  text-align: left; /* style_13 */
+  color: #dbdbdb;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.06px;
+  text-align: left;
 }
 
 .register-button {
-  /* Combined styles from style_4 (shadow) and style_5 (base button) */
-  background-color: #ff0050; /* style_5 */
-  display: flex; /* style_5 */
-  flex-direction: row; /* style_5 */
-  justify-content: center; /* style_5 */
-  align-items: center; /* style_5 */
-  padding: 12.14px 24.29px; /* style_5 */
-  border-radius: 4.86px; /* style_5 */
-  overflow: hidden; /* style_5 */
+  background-color: #ff0050;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12.14px 24.29px;
+  border-radius: 4.86px;
+  overflow: hidden;
   border: none;
   cursor: pointer;
-  width: 172.30px; /* From node 131:18556 width */
-  height: 58.29px; /* From node 131:18556 height */
-  box-shadow: -1.90px 2.53px 1.27px 0px rgba(0, 0, 0, 0.22), 0px 0px 15.21px 0px #ff0050; /* style_4 */
+  width: 172.30px;
+  height: 58.29px;
+  box-shadow: -1.90px 2.53px 1.27px 0px rgba(0, 0, 0, 0.22), 0px 0px 15.21px 0px #ff0050;
 }
 
 .button-text-container {
-  /* style_6 for I131:18556;1812:4527;1812:4292 (Label FRAME) */
-  display: flex; /* style_6 */
-  flex-direction: row; /* style_6 */
-  align-items: center; /* style_6 */
-  padding: 0 9.72px; /* style_6 padding-left/right */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 9.72px;
 }
 
 .button-text-content {
-  font-family: 'Inter', sans-serif; /* style_7 */
-  font-weight: 700; /* style_7 */
-  font-size: 16px; /* style_7 */
-  line-height: 28px; /* style_7 */
-  color: #ffffff; /* style_7 */
-  text-align: left; /* style_7 */
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: left;
 }
 
 .button-icon-container {
-  /* style_8 for I131:18556;1812:4527;1812:4294 (Right Icon FRAME) */
-  display: flex; /* style_8 */
-  flex-direction: row; /* style_8 */
-  align-items: center; /* style_8 */
-  overflow: hidden; /* style_8 */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
 }
 
 .button-icon-svg {
-  width: 24.29px; /* From SVG node I131:18556;1812:4527;1812:4295 */
-  height: 24.29px; /* From SVG node I131:18556;1812:4527;1812:4295 */
+  width: 24.29px;
+  height: 24.29px;
 }
 
-/* Basic responsiveness: On smaller screens, allow form area to be more flexible */
 @media (max-width: 768px) {
   .registration-container {
-    height: auto; /* Allow height to adjust to content */
-    padding-bottom: 20px; /* Add some padding at the bottom */
+    height: auto;
+    padding-bottom: 20px;
   }
   .form-area {
-    position: static; /* Remove absolute positioning */
-    margin: 20px auto; /* Center the form area */
-    padding: 0 20px; /* Add horizontal padding */
+    position: static;
+    margin: 20px auto;
+    padding: 0 20px;
     left: auto;
     top: auto;
     width: 90%;
-    max-width: 350px; /* Limit form width */
+    max-width: 350px;
   }
   .form-title {
-    width: 100%; /* Allow title to take full width of its container */
-    text-align: center; /* Center title text */
-    font-size: 20px; /* Adjust font size */
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
   }
   .input-group {
-    width: 100%; /* Inputs take full width of form-area */
+    width: 100%;
   }
   .register-button {
-    width: 100%; /* Button takes full width */
+    width: 100%;
   }
   .page-header-nav {
-    position: static; /* Remove absolute positioning */
+    position: static;
     text-align: center;
     padding: 10px 0;
   }
   .background-image {
-    /* On small screens, the background image might be too distracting or not fit well.
-       Consider a simpler background or hiding it. For now, keep it. */
-    min-height: 300px; /* Ensure it has some minimum height */
-    object-position: center top; /* Adjust focus of image */
+    min-height: 300px;
+    object-position: center top;
   }
 }
 @media (max-width: 480px) {

@@ -1,70 +1,47 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background-color: #ffffff; /* Default page background */
+    background-color: #ffffff;
 }
 
 * {
     box-sizing: border-box;
 }
 
-/* CSS for section section:courses */
 .courses-container {
     display: flex;
-    max-width: 1440px; /* width of content frame 136:18647 */
+    max-width: 1440px;
     margin: 0 auto;
     position: relative;
-    background-color: #ffffff; /* style_1 from content frame 136:18647 */
-    overflow: hidden; /* style_1 from content frame 136:18647 */
-    height: 1344px; /* height of content frame 136:18647 */
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 1344px;
 }
 
 .page-navigation {
     position: absolute;
-    /* "Дом" (136:18658) original x: 907, y: -305. Content frame (136:18647) original x: -457, y: -341.
-       Relative x = 907 - (-457) = 1364px
-       Relative y = -305 - (-341) = 36px
-    */
     top: 36px;
     left: 1364px;
     z-index: 10;
 }
 
 .nav-home {
-    /* style_7 for 136:18658 */
     color: #fdfdfd;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1; /* 16px / 16px */
+    line-height: 1;
     text-decoration: none;
 }
 
 .left-panel {
-    width: 554px; /* width of blue_rect2 (136:18664) */
-    background-color: #3f9bdd; /* style_2 for blue_rect2 */
-    /* Padding calculations:
-       blue_rect2 (136:18664) x: -457, y: -341, height: 1344
-       First text group (136:18663) y: -277. Top padding: -277 - (-341) = 64px.
-       Text groups x: -364. Left padding: -364 - (-457) = 93px.
-       Last text group (136:18661) y: 580, height: 247. Ends at 580 + 247 = 827 (absolute).
-       Bottom edge relative to blue_rect2 top: 827 - (-341) = 1168px.
-       Bottom padding: 1344 (blue_rect2_height) - 1168 = 176px.
-       Content width in left panel: max text width is 401px for a title, descriptions are 350px.
-       Available space for text: 554 (panel_width) - 93 (left_pad) = 461px.
-       Right padding: 461 - 401 (max_text_width) = 60px. (Using 401 as reference for general text area)
-    */
+    width: 554px;
+    background-color: #3f9bdd;
     padding: 64px 60px 176px 93px;
-    z-index: 1; /* Behind the right panel's overlap */
+    z-index: 1;
 }
 
 .course-item:not(:last-child) {
-    /* Spacing between course items:
-       Group 7 (136:18662) y: 157. Group 8 (136:18663) y: -277, height: 226. Group 8 ends at -277 + 226 = -51.
-       Margin for item 1 = 157 - (-51) = 208px.
 
-       Group 6 (136:18661) y: 580. Group 7 (136:18662) y: 157, height: 225. Group 7 ends at 157 + 225 = 382.
-       Margin for item 2 = 580 - 382 = 198px.
-    */
 }
 
 .course-item:nth-of-type(1) {
@@ -76,61 +53,48 @@ body {
 }
 
 .course-title {
-    /* style_6 for titles like 136:18654 */
     color: #ff98db;
     font-weight: 700;
     font-size: 24px;
-    line-height: 1; /* 24px / 24px */
-    margin: 0 0 0 0; /* Base margin, specific top margins on descriptions handle spacing */
+    line-height: 1;
+    margin: 0 0 0 0;
 }
 
 .course-description {
-    /* style_5 for descriptions like 136:18650 */
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.2; /* 19.2px / 16px */
+    line-height: 1.2;
     margin-bottom: 0;
 }
 
-/* Specific margins from title to description based on Figma coordinates */
 .course-description-1 {
     margin-top: 2px;
 }
 
-/* Text y(-241) - (Title y(-277) + Title h(34)) = 2px */
 .course-description-2 {
     margin-top: 1px;
 }
 
-/* Text y(192) - (Title y(157) + Title h(34)) = 1px */
+
 .course-description-3 {
     margin-top: -4px;
 }
 
-/* Text y(618) - (Title y(580) + Title h(42)) = -4px */
-
 
 .right-panel {
-    width: 896px; /* width of students 1 image (136:18660) */
-    /* students 1 image (136:18660) x: 87. blue_rect2 (136:18664) x: -457.
-       Relative to content frame: image starts at 87 - (-457) = 544px. blue_rect2 starts at 0px.
-       Left panel (blue_rect2) width is 554px.
-       Overlap: right panel starts at 544px, left panel ends at 554px. Right panel is 10px "behind" or left panel extends 10px under.
-       The image is visually on top. So, right-panel needs to overlap left-panel.
-       margin-left: -10px effectively pulls the right panel leftwards over the left panel.
-    */
+    width: 896px;
     margin-left: -10px;
     position: relative;
-    z-index: 2; /* Above the left panel's overlap */
-    height: 1344px; /* Match content frame height */
+    z-index: 2;
+    height: 1344px;
 }
 
 .main-image {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* From style_3 for students 1 image */
+    object-fit: cover;
 }
 
 .price-tags-overlay {
@@ -144,8 +108,8 @@ body {
 
 .price-tag {
     position: absolute;
-    width: 196px; /* From Group 9, 10, 11 (e.g. 136:18671) boundingBox */
-    height: 110px; /* From Group 9, 10, 11 boundingBox */
+    width: 196px;
+    height: 110px;
     pointer-events: auto;
 }
 
@@ -155,39 +119,19 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.7; /* style_9, style_11, style_12 for SVGs */
+    opacity: 0.7;
 }
 
 .price-tag .price-text {
     position: absolute;
-    /* Text (e.g. 136:18670) x:35, y:-15. Its parent Group (e.g. 136:18671) x:-11, y:-51.
-       Relative x_text = 35 - (-11) = 46px
-       Relative y_text = -15 - (-51) = 36px
-    */
     left: 46px;
     top: 36px;
-    /* style_10 for price text */
     color: #7b0a0a;
     font-weight: 700;
     font-size: 32px;
-    line-height: 1.2; /* 38.4px / 32px */
-    /* width: 114px; height: 44px; from text node, let it flow or set if needed */
+    line-height: 1.2;
 }
 
-/* Positioning for each price tag relative to .right-panel.
-   Origin of .right-panel within .courses-container is effectively x = 544px (due to margin-left: -10px on 554px boundary), y = 0px.
-   Price Tag Groups (e.g. 136:18671) original x: -11, y: -51.
-   Relative to content frame (origin -457, -341):
-   x_rel_content = -11 - (-457) = 446px
-   y_rel_content (for Group 9 / price-tag-1) = -51 - (-341) = 290px
-   Position relative to .right-panel (which starts at x=544 within content frame):
-   left_for_price_tag = x_rel_content (446) - x_start_of_right_panel (544) = -98px.
-   top_for_price_tag_1 = y_rel_content (290px).
-
-   Price Tag 1 (Group 9 / 136:18671): y: -51 -> top_rel_content = 290px.
-   Price Tag 2 (Group 10 / 136:18672): y: 382 -> top_rel_content = 382 - (-341) = 723px.
-   Price Tag 3 (Group 11 / 136:18676): y: 823 -> top_rel_content = 823 - (-341) = 1164px.
-*/
 .price-tag-1 {
     left: -98px;
     top: 290px;
@@ -203,16 +147,12 @@ body {
     top: 1164px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1439px) {
-    /* Slightly less than max-width to handle edge cases */
     .courses-container {
-        /* No change, flex handles shrinking until breakpoint */
     }
 }
 
 @media (max-width: 1024px) {
-    /* Tablet */
     .courses-container {
         flex-direction: column;
         height: auto;
@@ -225,38 +165,36 @@ body {
     }
 
     .left-panel {
-        padding: 40px 20px; /* Adjusted padding */
-        order: 2; /* Text below image */
+        padding: 40px 20px;
+        order: 2;
     }
 
     .course-item:nth-of-type(1),
     .course-item:nth-of-type(2) {
-        margin-bottom: 40px; /* Adjust spacing */
+        margin-bottom: 40px;
     }
 
     .right-panel {
-        order: 1; /* Image above text */
-        height: 60vh; /* Example height for image */
+        order: 1;
+        height: 60vh;
     }
 
     .page-navigation {
         top: 20px;
         left: auto;
-        right: 20px; /* Move to right for typical mobile nav */
+        right: 20px;
     }
 
     .price-tag {
-        transform: scale(0.8); /* Scale down price tags */
+        transform: scale(0.8);
         transform-origin: top left;
     }
 
-    /* Adjust price tag positions for smaller/stacked layout */
     .price-tag-1 {
         left: 10px;
         top: 10%;
     }
 
-    /* Example relative positions */
     .price-tag-2 {
         left: 10px;
         top: 35%;
@@ -269,7 +207,6 @@ body {
 }
 
 @media (max-width: 767px) {
-    /* Mobile */
     .left-panel {
         padding: 30px 15px;
     }
@@ -288,7 +225,7 @@ body {
     }
 
     .right-panel {
-        height: 50vh; /* Further adjust image height */
+        height: 50vh;
     }
 
     .page-navigation {
@@ -305,8 +242,7 @@ body {
     }
 
     .price-tag .price-text {
-        font-size: 28px; /* Adjust text size within scaled tag if needed */
-        /* Adjust internal positioning if scale affects it badly */
+        font-size: 28px;
         left: 30px;
         top: 30px;
     }
